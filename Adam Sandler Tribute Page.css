@@ -40,9 +40,12 @@ h1 {color: #BF0707;
               color: #BF0707;
               text-align: center;
              line-height: 0.5em; }
-#tribute-info-title {color: #BF0707;
+#tribute-info-title {
+    color: #BF0707;
     font-size: 26px;
-    margin-bottom: -.5em;}
+    margin-bottom: -.5em;
+    font-weight: normal;
+}
 #tribute-info {color: #1E1B2E; 
                font-size: 18px;
                text-align: left;
