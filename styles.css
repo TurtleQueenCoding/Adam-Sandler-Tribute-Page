@@ -1,0 +1,70 @@
+body{background-color:#EBFCFF;
+font-family: "Source Sans Pro", sans-serif;
+text-align: center;}
+h1 {color: #BF0707;
+    font-family: "Caveat", script; 
+    font-size: 64px;
+    line-height: .9em;}
+#img-div {margin: -2em auto 0;}
+#image {max-width: 100%; 
+      display: block; 
+      margin: auto;
+      padding-top: 0;}
+#img-caption {color: #1E1B2E;
+              font-size: 18px;
+              line-height: 1.6em;
+              margin-bottom:1.5em;
+              margin-top: 0.5em;}
+/*I couldn't manage to set a maximum video size and make the video centered and responsive for smaller screens. When I tried, there was a ton of extra space below the video, and I couldn't find a way to fix it with margins on the next element.*/
+.videoWrapper{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    width: 100vw;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.videoWrapper iframe{
+    position:absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    height:100%;
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+#video-text {font-size: 24px;
+              color: #BF0707;
+              text-align: center;
+             line-height: 0.5em; }
+#tribute-info-title {
+    color: #BF0707;
+    font-size: 26px;
+    margin-bottom: -.5em;
+    font-weight: normal;
+}
+#tribute-info {color: #1E1B2E; 
+               font-size: 18px;
+               text-align: left;
+               margin-bottom:-.5em;}
+#tribute-info-fieldset {border: none;
+max-width: 70vw;
+margin: auto;}
+#links-title {color: #BF0707;
+    font-size: 26px;}
+.link {font-size: 20px;}
+a:link, a:visited {
+  background-color: #BF0707;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#links-fieldset{border-style: solid;
+border-color: #1E1B2E;
+border-width: medium;
+margin-top: 1em;}
