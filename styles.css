@@ -1,10 +1,13 @@
-body{background-color:#EBFCFF;
-font-family: "Source Sans Pro", sans-serif;
-text-align: center;}
+body{
+  background: linear-gradient(235deg, #e3ffe7 0%, #d9e7ff 100%);
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;}
 h1 {color: #BF0707;
     font-family: "Caveat", script; 
     font-size: 64px;
-    line-height: .9em;}
+    line-height: .9em;
+    text-align: center;
+    margin-top: 0px;}
 #img-div {margin: -2em auto 0;}
 #image {max-width: 100%; 
       display: block; 
@@ -40,29 +43,30 @@ h1 {color: #BF0707;
               color: #BF0707;
               text-align: center;
              line-height: 0.5em; }
-#tribute-info-title {
-    color: #BF0707;
+#tribute-info-title {color: #BF0707;
     font-size: 26px;
-    margin-bottom: -.5em;
-    font-weight: normal;
-}
+    margin-bottom: -.5em;}
 #tribute-info {color: #1E1B2E; 
                font-size: 18px;
                text-align: left;
                margin-bottom:-.5em;}
 #tribute-info-fieldset {border: none;
 max-width: 70vw;
-margin: auto;}
+margin: auto;
+font-weight: normal;}
 #links-title {color: #BF0707;
     font-size: 26px;}
 .link {font-size: 20px;}
-a:link, a:visited {
+button {
   background-color: #BF0707;
   color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: 20px;
+  border-color: #1E1B2E;
+  cursor: pointer;
 }
 #links-fieldset{border-style: solid;
 border-color: #1E1B2E;
