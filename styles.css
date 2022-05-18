@@ -1,74 +1,144 @@
-body{
+body {
   background: linear-gradient(235deg, #e3ffe7 0%, #d9e7ff 100%);
   font-family: "Source Sans Pro", sans-serif;
-  text-align: center;}
-h1 {color: #BF0707;
-    font-family: "Caveat", script; 
-    font-size: 64px;
-    line-height: .9em;
-    text-align: center;
-    margin-top: 0px;}
-#img-div {margin: -2em auto 0;}
-#image {max-width: 100%; 
-      display: block; 
-      margin: auto;
-      padding-top: 0;}
-#img-caption {color: #1E1B2E;
-              font-size: 18px;
-              line-height: 1.6em;
-              margin-bottom:1.5em;
-              margin-top: 0.5em;}
-/*I couldn't manage to set a maximum video size and make the video centered and responsive for smaller screens. When I tried, there was a ton of extra space below the video, and I couldn't find a way to fix it with margins on the next element.*/
-.videoWrapper{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    width: 100vw;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
 }
-.videoWrapper iframe{
-    position:absolute;
-    top:0;
-    right: 0;
-    bottom: 0;
-    height:100%;
-    width:100%;
-    padding: 0;
-    margin: 0;
+h1 {
+  color: #bf0707;
+  font-family: "Caveat", script;
+  font-size: 80px;
+  line-height: 1em;
+  margin-bottom: 0px;
+  letter-spacing: 0.05em;
+  margin-top: 0;
 }
-#video-text {font-size: 24px;
-              color: #BF0707;
-              text-align: center;
-             line-height: 0.5em; }
-#tribute-info-title {color: #BF0707;
-    font-size: 26px;
-    margin-bottom: -.5em;}
-#tribute-info {color: #1E1B2E; 
-               font-size: 18px;
-               text-align: left;
-               margin-bottom:-.5em;}
-#tribute-info-fieldset {border: none;
-max-width: 70vw;
-margin: auto;
-font-weight: normal;}
-#links-title {color: #BF0707;
-    font-size: 26px;}
-.link {font-size: 20px;}
+#img-div {
+  margin: auto 0;
+}
+#image {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  padding-top: 0.5em;
+}
+#img-caption {
+  color: #1e1b2e;
+  font-size: 20px;
+  line-height: 1.6em;
+  margin-bottom: 1.5em;
+  margin-top: 0.3em;
+}
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -1em;
+}
+.video-wrapper iframe {
+  height: 315px;
+  width: 560px;
+  padding: 0;
+  margin: 0;
+}
+#video-text {
+  font-size: 30px;
+  color: #bf0707;
+  text-align: center;
+  margin-top: 0.3em;
+}
+#tribute-info-title {
+  color: #bf0707;
+  font-size: 30px;
+  margin-bottom: -0.5em;
+}
+#tribute-info {
+  color: #1e1b2e;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: -0.5em;
+}
+li {
+  margin-bottom: 1em;
+}
+#tribute-info-fieldset {
+  border: none;
+  width: 90vw;
+  margin: auto;
+  font-weight: normal;
+}
+#links-title {
+  color: #bf0707;
+  font-size: 30px;
+}
+.link {
+  font-size: 20px;
+}
 button {
-  background-color: #BF0707;
+  background-color: #bf0707;
   color: white;
-  padding: 10px 20px;
+  padding: 0.5em 1em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  border-color: #1E1B2E;
+  font-size: 18px;
+  border-color: #1e1b2e;
   cursor: pointer;
 }
-#links-fieldset{border-style: solid;
-border-color: #1E1B2E;
-border-width: medium;
-margin-top: 1em;}
+#links-fieldset {
+  border-style: solid;
+  border-color: #1e1b2e;
+  border-width: medium;
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+button:hover {
+  background-color: #1e1b2e;
+}
+@media screen and (min-width: 561px) and (max-width: 769px) {
+  #title {
+    font-size: 60px;
+  }
+  #tribute-info-title,
+  #video-text,
+  #links-title {
+    font-size: 25px;
+  }
+  #img-caption,
+  li {
+    font-size: 18px;
+  }
+  button {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .video-wrapper {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .video-wrapper iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  #title {
+    font-size: 40px;
+  }
+  #tribute-info-title,
+  #video-text,
+  #links-title {
+    font-size: 20px;
+  }
+  #img-caption,
+  li {
+    font-size: 16px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
