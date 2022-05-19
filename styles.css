@@ -1,5 +1,6 @@
 body {
-  background: linear-gradient(235deg, #e3ffe7 0%, #d9e7ff 100%);
+  background-image: url(https://i.imgur.com/5v2K63A.jpg);
+  background-size: cover;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
 }
