@@ -57,7 +57,7 @@ h1 {
   text-align: left;
   margin-bottom: -0.5em;
 }
-li {
+#tribute-info > li {
   margin-bottom: 1em;
 }
 #tribute-info-fieldset {
@@ -70,31 +70,37 @@ li {
   color: #bf0707;
   font-size: 30px;
 }
-.link {
-  font-size: 20px;
+#links-fieldset ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-button {
-  background-color: #bf0707;
-  color: white;
-  padding: 0.5em 1em;
-  text-align: center;
+.links {
+  list-style: none;
   text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  border-color: #1e1b2e;
-  cursor: pointer;
+}
+.fa-brands {
+  font-size: 50px;
+  letter-spacing: 1em;
+  list-style: none;
+}
+.fa-imdb {
+  color: #e3bb1b;
+}
+.fa-facebook {
+  color: #1877f2;
+}
+.fa-twitter {
+  color: #1d9bf0;
+}
+.fa-wikipedia-w {
+  color: #000000;
 }
 #links-fieldset {
-  border-style: solid;
-  border-color: #1e1b2e;
-  border-width: medium;
+  border: none;
+  width: 50%;
+  margin: auto;
   margin-top: 1.5em;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-button:hover {
-  background-color: #1e1b2e;
 }
 @media screen and (min-width: 561px) and (max-width: 769px) {
   #title {
@@ -108,9 +114,6 @@ button:hover {
   #img-caption,
   li {
     font-size: 18px;
-  }
-  button {
-    font-size: 16px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -136,10 +139,7 @@ button:hover {
     font-size: 20px;
   }
   #img-caption,
-  li {
+  #tribute-info > li {
     font-size: 16px;
-  }
-  button {
-    font-size: 14px;
   }
 }
