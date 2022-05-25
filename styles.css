@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Source+Sans+Pro&display=swap");
 body {
   background-image: url(https://i.imgur.com/5v2K63A.jpg);
   background-size: cover;
@@ -21,6 +22,7 @@ h1 {
   display: block;
   margin: auto;
   padding-top: 0.5em;
+  box-shadow: 5px 5px 12px 3px #1e1b2e;
 }
 #img-caption {
   color: #1e1b2e;
@@ -102,7 +104,27 @@ h1 {
   margin: auto;
   margin-top: 1.5em;
 }
-@media screen and (min-width: 561px) and (max-width: 769px) {
+.fa-imdb:hover {
+  font-size: 65px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.fa-facebook:hover {
+  font-size: 65px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.fa-twitter:hover {
+  font-size: 65px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.fa-wikipedia-w:hover {
+  font-size: 65px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+@media screen and (max-width: 769px) {
   #title {
     font-size: 60px;
   }
@@ -115,8 +137,11 @@ h1 {
   li {
     font-size: 18px;
   }
+  #tribute info > li {
+    text-align: justify;
+  }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
   .video-wrapper {
     overflow: hidden;
     padding-bottom: 56.25%;
